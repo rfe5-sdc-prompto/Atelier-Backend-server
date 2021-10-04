@@ -1,30 +1,50 @@
-DROP TABLE IF EXISTS rating_reviews;
+
 CREATE DATABASE rating_reviews;
 
 \c rating_reviews;
 
 CREATE TABLE IF NOT EXISTS reviews (
-  review_id int not null,
+  review_id serial,
+  product_id int not null,
   rating int,
+  date text,
   summary text,
-  recommend boolean,
-  response text,
   body text,
-  date date,
+  recommend boolean,
+  reported boolean,
   reviewer_name varchar(100),
+  reviewer_email text,
+  response text,
   helpfulness int,
   PRIMARY KEY(review_id)
 );
 
 
 CREATE TABLE IF NOT EXISTS photos (
-  id int not null,
-  url text,
+  id serial,
   review_id int not null,
+  url text,
   PRIMARY KEY(id),
   CONSTRAINT fk_reviews
    FOREIGN KEY(review_id)
       REFERENCES reviews(review_id)
+);
+
+
+CREATE TABLE IF NOT EXISTS characteristic (
+  id serial,
+  product_id int not null,
+  names varchar(100),
+  PRIMARY KEY(id)
+);
+
+
+CREATE TABLE IF NOT EXISTS characteristic_reivews (
+  id serial,
+  characteristic_id int not null,
+  review_id int not null,
+  value int,
+  PRIMARY KEY(id)
 );
 
 
