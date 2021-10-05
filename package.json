@@ -1,0 +1,31 @@
+{
+  "name": "ratings_reviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfe5-sdc-prompto/ratings_reviews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfe5-sdc-prompto/ratings_reviews/issues"
+  },
+  "homepage": "https://github.com/rfe5-sdc-prompto/ratings_reviews#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
+    "axios": "^0.22.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
