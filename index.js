@@ -5,7 +5,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
+app.get('/loaderio-7a4ca337b5b22530daf7f98dbaa56629',(req,res)=>{
+res.send('loaderio-7a4ca337b5b22530daf7f98dbaa56629')})
 
 app.get('/reviews?:product_id', (req, res) => {
   var product_id = req.query.product_id;
