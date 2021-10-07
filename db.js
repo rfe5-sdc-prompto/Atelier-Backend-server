@@ -4,7 +4,7 @@ const pool = new Pool({
   user:'postgres',
   password:'postgres',
   database: 'awsdb',
-  host:'3.19.238.190',
+  host:'ip-172-31-29-238.us-east-2.compute.internal',
   port:5432
 })
 
