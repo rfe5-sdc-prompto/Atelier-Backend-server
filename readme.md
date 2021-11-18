@@ -7,7 +7,7 @@
 - [Technologies Used](#technologies-used)
 
 ## Team Members
-- [Jordan Villacorta](https://github.com/jordanvillacorta) - [LinkedIn](https://www.linkedin.com/in/jordan-villacorta/)
+- [Jian Zhang](https://www.linkedin.com/in/-jianzhang/) - [LinkedIn](https://www.linkedin.com/in/-jianzhang/)
 
 ## Description
 
